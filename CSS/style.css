@@ -560,7 +560,9 @@ footer{
     margin-bottom: 35px;
 }
 
-.hero-text .btn{
+.hero-text 
+
+.btn{
     display: inline-block;
     width: 210px;
     padding: 16px 0;
@@ -574,6 +576,6 @@ footer{
     font-weight: 700;
 }
 
-.galeria{
-    display: flex;
+  .abas{
+    height: 15vh;
   }
