@@ -305,49 +305,6 @@ button {
 }
 
 
-/* ===========================
-            JOGOS
-=========================== */
-
-.jogo{
-  color:#fff;
-  text-align:center;
-}
-
-.jogo-item{
-  width:100%;
-  height:650px;
-  display:inline-block;
-  text-align:center;
-}
-
-.jogo-jogo_um,
-.jogo-jogo_dois,
-.jogo-jogo_tres,
-.jogo-jogo_quatro{
-  font-weight:bold;
-  font-style:italic;
-}
-
-.jogo p{
-  margin-top:10px;
-  font-weight:bold;
-  font-style:italic;
-}
-
-.jogo img{
-  width:100px;
-  display:inline-block;
-  margin:0 auto;
-  box-shadow:none;
-  border:none;
-}
-
-
-/* ===========================
-            TABELA
-=========================== */
-
 table{
   width:100%;
   min-width:720px;
@@ -579,3 +536,78 @@ footer{
   .abas{
     height: 15vh;
   }
+
+  .btn-sobre {
+    display: inline-block;
+    width: 210px;
+    padding: 16px 0;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border: 2px solid #d4af37;
+    border-radius: 40px;
+    font-weight: 700;
+  }
+
+  .btn-sobre :hover{
+    background: #d4af37;
+    color: #000 !important;
+    box-shadow: 0 0 20px rgba(212,175,55,.45);
+    transform: translateY(-2px);
+}
+
+/* Esconde o checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* As três linhas */
+.menu-btn {
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-btn span {
+    display: block;
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #111;
+    padding-top: 90px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+/* Quando clicar nas três linhas */
+#menu-toggle:checked ~ .menu {
+    left: 0;
+}
+
+/* Links */
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background: #222;
+}
