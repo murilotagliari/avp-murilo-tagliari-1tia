@@ -1,7 +1,3 @@
-/* ===========================
-   CONFIGURAÇÕES GERAIS
-=========================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
 
 :root{
@@ -34,11 +30,6 @@ body{
     linear-gradient(135deg,#2e0101 0%,#000 45%,#b80000 100%);
 }
 
-
-/* ===========================
-        HEADER PORSCHE
-=========================== */
-
 .hero{
     position: relative;
     width: 100%;
@@ -46,7 +37,6 @@ body{
     overflow: hidden;
 }
 
-/* FOTO EM TELA CHEIA */
 .hero-bg{
     position: absolute;
     inset: 0;
@@ -62,7 +52,6 @@ body{
     box-shadow: none;
 }
 
-/* GRADIENTE IGUAL À REFERÊNCIA */
 .overlay{
     position: absolute;
     inset: 0;
@@ -73,7 +62,6 @@ body{
         rgba(80,0,0,.55) 100%);
 }
 
-/* NAVBAR */
 .navbar{
     position: absolute;
     top: 0;
@@ -122,7 +110,6 @@ body{
     cursor: pointer;
 }
 
-/* TEXTO SOBRE A IMAGEM */
 .hero-text{
     position: absolute;
     right: 7%;
@@ -187,11 +174,6 @@ body{
     transform: translateY(-2px);
 }
 
-
-/* ===========================
-        CONTEÚDO
-=========================== */
-
 main{
   max-width:1000px;
   margin:36px auto 48px;
@@ -234,11 +216,6 @@ ul{
   padding-left:1.2rem;
 }
 
-
-/* ===========================
-          IMAGENS
-=========================== */
-
 img{
   display:block;
   width:100%;
@@ -272,14 +249,6 @@ html {
   scroll-behavior: smooth;
 }
 
-form {
-    width: 60%;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
 label {
     display: block;
     margin-top: 10px;
@@ -303,7 +272,6 @@ button {
     padding: 10px 20px;
     margin-top: 10px;
 }
-
 
 table{
   width:100%;
@@ -348,21 +316,11 @@ table td:last-child{
   min-width:240px;
 }
 
-
-/* ===========================
-            RODAPÉ
-=========================== */
-
 footer{
   text-align:center;
   padding:22px 20px 34px;
   color:rgba(248,250,252,.7);
 }
-
-
-/* ===========================
-         RESPONSIVO
-=========================== */
 
 @media (max-width:768px){
 
@@ -403,8 +361,6 @@ footer{
     margin: 0;
 }
 
-/* ========= CORREÇÃO DO HEADER ========= */
-
 .hero{
     position: relative;
     width: 100%;
@@ -412,7 +368,6 @@ footer{
     overflow: hidden;
 }
 
-/* Foto ocupa a tela inteira */
 .hero-bg{
     position: absolute;
     inset: 0;
@@ -430,7 +385,6 @@ footer{
     z-index: 1;
 }
 
-/* Escurece a imagem */
 .overlay{
     position: absolute;
     inset: 0;
@@ -443,7 +397,6 @@ footer{
     z-index: 2;
 }
 
-/* Navbar */
 .navbar{
     position: absolute;
     top: 0;
@@ -465,7 +418,6 @@ footer{
     z-index: 10;
 }
 
-/* Logo */
 .navbar .logo{
     width: 75px !important;
     max-width: 75px !important;
@@ -475,7 +427,6 @@ footer{
     box-shadow: none !important;
 }
 
-/* Ícones */
 .nav-icons{
     display: flex;
     gap: 22px;
@@ -486,7 +437,6 @@ footer{
     font-size: 26px;
 }
 
-/* Texto */
 .hero-text{
     position: absolute;
     right: 7%;
@@ -558,12 +508,10 @@ footer{
     transform: translateY(-2px);
 }
 
-/* Esconde o checkbox */
 #menu-toggle {
     display: none;
 }
 
-/* As três linhas */
 .menu-btn {
     position: fixed;
     top: 25px;
@@ -581,7 +529,6 @@ footer{
     border-radius: 5px;
 }
 
-/* Menu */
 .menu {
     position: fixed;
     top: 0;
@@ -594,12 +541,10 @@ footer{
     z-index: 1000;
 }
 
-/* Quando clicar nas três linhas */
 #menu-toggle:checked ~ .menu {
     left: 0;
 }
 
-/* Links */
 .menu a {
     display: block;
     color: white;
@@ -610,4 +555,152 @@ footer{
 
 .menu a:hover {
     background: #222;
+}
+
+.contato {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        120deg,
+        #080000 0%,
+        #180000 45%,
+        #850000 100%
+    );
+
+    color: #fff;
+}
+
+.contato-container {
+    width: 100%;
+    max-width: 520px;
+}
+
+.contato-titulo {
+    margin-bottom: 30px;
+}
+
+.contato-titulo h2 {
+    margin: 0 0 10px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contato-titulo p {
+    margin: 0;
+    color: #d8d8d8;
+    font-size: 16px;
+}
+
+.formulario {
+    padding: 35px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(5px);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.campo label {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    color: #222;
+    background-color: #fff;
+
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #888;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #e00000;
+    box-shadow: 0 0 0 3px rgba(224, 0, 0, 0.2);
+}
+
+.campo textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #d50000;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.formulario button:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(213, 0, 0, 0.35);
+}
+
+.formulario button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .contato {
+        padding: 40px 15px;
+    }
+
+    .contato-titulo h2 {
+        font-size: 28px;
+    }
+
+    .formulario {
+        padding: 25px 20px;
+    }
 }

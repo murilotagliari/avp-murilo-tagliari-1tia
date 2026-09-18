@@ -25,9 +25,26 @@
 <header class="abas">
 
     <nav class="navbar">
-        <i class="fa-solid fa-bars"></i>
+         
+      <br>
+      <br>
 
-        <a href="index.html"> <img src="FOTOS/Porsche LOGO.jpg" class="logo" alt="Porsche">   </a>
+      <a href="index.html"> <img src="FOTOS/Porsche LOGO.jpg" class="logo" alt="Porsche">   </a>
+
+     <input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav class="menu">
+    <a href="http://127.0.0.1:3000/index.html?vscode-livepreview=true">Início</a>
+    <a href="http://127.0.0.1:3000/sobre.html?vscode-livepreview=true">Sobre</a>
+    <a href="http://127.0.0.1:3000/informacoes.html?vscode-livepreview=true">Informações</a>
+    <a href="http://127.0.0.1:3000/contato.html?vscode-livepreview=true">Contato</a>
+</nav>
 
         <div class="nav-icons">
           <a href="contato.html"> <i class="fa-regular fa-user"></i> </a>
@@ -36,39 +53,62 @@
 
 </header>
 
-    <main>
-        <h2>Entre em contato</h2>
-        <p>
-          Envie sua opinião sobre o site e sobre a Porsche.
-        </p>
-        <form>
-            <label for="nome">Nome:</label>
-            <br>
-            <input type="text" id="nome" name="nome" required>
-            <br><br>
-            <label for="email">E-mail:</label>
-            <br>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <label for="modelo">Modelo favorito:</label>
-            <br>
-            <select id="modelo" name="modelo">
-                <option value="911">Porsche 911</option>
-                <option value="cayenne">Porsche Cayenne</option>
-                <option value="taycan">Porsche Taycan</option>
-            </select>
-            <br><br>
-            <label for="mensagem">Mensagem:</label>
-            <br>
-            <textarea id="mensagem"
-                      name="mensagem"
-                      rows="6"
-                      cols="40"
-                      placeholder="Digite sua mensagem..."></textarea>
-            <br><br>
-            <button type="submit">Enviar</button>
+  <main class="contato">
+    <div class="contato-container">
+        <div class="contato-titulo">
+            <h2>Entre em contato</h2>
+            <p>
+                Envie sua opinião sobre o site e sobre a Porsche.
+            </p>
+        </div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="modelo">Modelo favorito</label>
+                <select id="modelo" name="modelo">
+                    <option value="911">Porsche 911</option>
+                    <option value="cayenne">Porsche Cayenne</option>
+                    <option value="taycan">Porsche Taycan</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem..."
+                ></textarea>
+            </div>
+
+            <button type="submit">Enviar mensagem</button>
         </form>
-    </main>
+    </div>
+</main>
+
 
   <footer>
    <p>Desenvolvido por Murilo Tagliari</p>
